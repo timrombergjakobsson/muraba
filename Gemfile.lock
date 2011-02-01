@@ -1,5 +1,6 @@
-PATH
-  remote: ../customized_toto
+GIT
+  remote: https://github.com/timrombergjakobsson/toto.git
+  revision: c8622d556b9d262d0005b9cf12b5a10194827c54
   specs:
     toto (0.4.9)
       builder
