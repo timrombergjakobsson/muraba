@@ -1,4 +1,4 @@
-title: The Wonderful Wizard of Oz
+title: Muraba
 author: Lyman Frank Baum
 date: 1900/05/17
 
