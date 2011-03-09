@@ -101,6 +101,10 @@ body > header {
 	line-height: 180px;
 	margin-bottom: 20px;
 }
+
+h1 {
+	font-size: 30px;
+}
 h1, h2, h3, h4 {
   display: inline;
   margin: 0;

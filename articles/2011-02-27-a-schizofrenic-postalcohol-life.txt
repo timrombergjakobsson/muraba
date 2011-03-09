@@ -1,5 +1,6 @@
 --- 
-title: A Schizofrenic post[:alcohol, :life]
+title: A Schizofrenic post[:alcohol, :life] 
+author: Tim Romberg
 date: 27/02/2011
 
 So basically this. In a weak moment of mine not to long ago. 
