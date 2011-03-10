@@ -1,5 +1,5 @@
 --- 
-title:Android emulator frustration - a Rhodes story
+title: Android emulator frustration - a Rhodes story
 author: Tim Romberg
 date: 2011/02/01
 
