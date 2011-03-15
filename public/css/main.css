@@ -2,6 +2,7 @@ html { margin: 20px }
 body {
   margin: 0 auto;
   font-family: 'Baskerville', Georgia, Times, serif;
+  background: #F0F0E5;
   font-size: 20px;
   line-height: 30px;
   padding: 15px;
@@ -26,6 +27,18 @@ section {
 	color: rgb(0, 153, 0);
 	height: 63px;
 	top: 0px; 
+}
+
+.author  {
+
+  color: rgb(169, 169, 169);
+  padding: 8px;
+  font-size: 25px;
+}
+
+span {
+
+  color: black;
 }
 
 #by {
