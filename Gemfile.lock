@@ -11,7 +11,12 @@ GEM
   remote: http://rubygems.org/
   specs:
     builder (3.0.0)
+    coderay (0.9.7)
+    nokogiri (1.4.4)
     rack (1.2.1)
+    rack-codehighlighter (0.4.7)
+      nokogiri (>= 1.4.1)
+      rack (>= 1.0.0)
     rack-rewrite (1.0.2)
     rdiscount (1.6.8)
 
@@ -20,6 +25,8 @@ PLATFORMS
 
 DEPENDENCIES
   builder
+  coderay
+  rack-codehighlighter
   rack-rewrite
   rdiscount
   toto!
