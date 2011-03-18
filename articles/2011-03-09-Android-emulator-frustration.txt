@@ -1,9 +1,9 @@
 ---
-title: Android emulator frustration - a Rhodes story
+title: Android emulator frustration - a Rhodes story 
 author: Tim Romberg
 date: 2011/02/01
 
 During about 2 weeks now me and some classmates in school been
 developing an app with the Rhodes mobile framework. We had a smooth
 transition in the beginning when we ran into problems with the Android
-emulator.
+emulator. Our application is highly dependent on geo-location
