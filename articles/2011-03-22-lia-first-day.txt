@@ -11,7 +11,7 @@ the instructions to "familiarize" ourselves with the tools. I'm foremost a front
 [vs]: http://www.microsoft.com/visualstudio/sv-se/products/2010-editions  
 with **C#** that is. Me I'm more of a **Ruby** guy, and would prefer to work in [Rails][ror].
 [ror]: http://rubyonrails.org/ 
-Cint though has Rails development as well and a lot more going on so. I also would like to get better at programming in general so learning C# and Visual Studios is a task 
+Cint though has Rails development as well and a lot more going on so who knows. I also would like to get better at programming in general so learning C# and Visual Studios is a task 
 I'm all up for.  
 
 
