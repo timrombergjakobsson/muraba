@@ -3,21 +3,23 @@ title: LIA first day
 date: 22/03/2011
 
 
-Today I started my first day of my internship at [Cint.com][id]. Well actually this is technical my second day but I didnt have time to
+Today I started my first day of my internship at [Cint.com][id]. 
+Well actually this is technical my second day but I didnt have time to
 [id]: http://cint.com/   
 write about it yesterday so this will have to do. So my first day at **Cint** was somewhat calm. We got our working stations and basically only got 
 the instructions to "familiarize" ourselves with the tools. I'm foremost a frontend guy I believe, but I have equal interest in the backend. During this internship I will be working mostly in [Visual Studios][vs]
 [vs]: http://www.microsoft.com/visualstudio/sv-se/products/2010-editions  
 with **C#** that is. Me I'm more of a **Ruby** guy, and would prefer to work in [Rails][ror].
-[ror]: http://rubyonrails.org/
+[ror]: http://rubyonrails.org/ 
+Cint though has Rails development as well and a lot more going on so. I also would like to get better at programming in general so learning C# and Visual Studios is a task 
+I'm all up for.  
 
 
 
 
 
 
-    c#
-    
+:::c#
     if(i == 2){
 	    Console.WriteLine(i);
 	}
@@ -25,8 +27,7 @@ with **C#** that is. Me I'm more of a **Ruby** guy, and would prefer to work in 
 	    Console.WriteLine(i);
 	}
 	
-    ruby
-    
+:::ruby
     if (i == 2)
 	    puts i
 	else
