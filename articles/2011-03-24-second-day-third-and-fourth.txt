@@ -2,5 +2,7 @@
 title: Second day, third and fourth
 date: 24/03/2011
 
-Once upon a time...
+So we have started slowly with some tasks at **Cint**. There is a lot of things that is happening but first some decisions needs to be taken
+about what we are supposed to do. Finally it seems as though we are going to start with a map that is going to visualize people and their participation in surveys.
+We have started making some mockups of the potential flow.
 
