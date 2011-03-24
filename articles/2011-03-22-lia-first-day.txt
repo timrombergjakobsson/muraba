@@ -19,7 +19,7 @@ I'm all up for.
 
 
 
-:::c#
+    :::c#
     if(i == 2){
 	    Console.WriteLine(i);
 	}
@@ -27,7 +27,7 @@ I'm all up for.
 	    Console.WriteLine(i);
 	}
 	
-:::ruby
+ruby:
     if (i == 2)
 	    puts i
 	else
