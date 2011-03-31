@@ -1,9 +1,9 @@
 require 'bundler'
 Bundler.setup
 require 'toto'
-require 'coderay'
-require 'rack/codehighlighter'
-use Rack::Codehighlighter, :coderay, :markdown => true, :element => "pre>code", :pattern => /\A:::(\w+)\s*(\n|&#x000A;)/i, :logging => true
+#require 'coderay'
+#require 'rack/codehighlighter'
+#use Rack::Codehighlighter, :coderay, :markdown => true, :element => "pre>code", :pattern => /\A:::(\w+)\s*(\n|&#x000A;)/i, :logging => true
 
 # Rack config
 use Rack::Static, :urls => ['/css', '/js', '/images', '/favicon.ico'], :root => 'public'
