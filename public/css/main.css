@@ -21,8 +21,8 @@ section {
 	padding: 10px 10px 0px 0px;
 }
 
-.logo-text {
-	font-size: 60px;
+.logo-text a {
+	font-size: 300%;
 	margin-top: 20px;
 	color: rgb(0, 153, 0);
 	height: 63px;
@@ -50,12 +50,33 @@ text-align: left;
 line-height: 90px;
 margin-bottom: 25px;
 
+} 
+
+/*
+	About me page
+*/
+
+.about {
+	font-size:200%;
 }
+
+.info-text {
+	
+}
+
+#site { 
+	text-align:left;
+	line-height: 1.5em;
+}
+
+/*
+	End of about me page
+*/
 
 
 #by {
 	font-style: italic;
-  margin-right: 5px;
+  	margin-right: 5px;
 	font-size: 28px;
 }
 
