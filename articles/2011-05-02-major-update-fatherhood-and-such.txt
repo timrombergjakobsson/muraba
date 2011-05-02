@@ -1,0 +1,20 @@
+--- 
+title: Major update, fatherhood and such
+date: 02/05/2011
+
+So it's been a long time since I updated this blog. The major reason would be that I have become a father. I got a son a bit over four weeks ago now. The most beautiful little creature you could ever imagine.  
+
+So I had my first ten days of paternity leave. It was great but now I'm back at **Cint**. The project is moving on in a sustainable pace. We are not exactly drowning in things to do. Which is not bad, but it would be nice to have more things to do.
+This week though hopefully things will get more interesting.  
+Up until now we have been using "fake" data for visualisation. Now we are moving on to what we could call phase two of the project, now we will be given "real" data.  
+
+It will go something like this. One of the developers on the company will set up the back end which will feed us the data. We focus on the front end as for now, doing some kind of ligth-version long-polling with javascript.  
+
+From the beginning I was thinking that we would be doing some kind interesting [Comet][ct]
+[ct]: http://en.wikipedia.org/wiki/Comet_(programming) 
+
+solution.  Unfortunately though **Windows** **IIS** server does not support the pattern so we have to go for a work around.  
+
+Today we had some planning, talked about how our **DoD** should be and thats about it. Updates will come more frequently from now on. 
+
+                                                                                    

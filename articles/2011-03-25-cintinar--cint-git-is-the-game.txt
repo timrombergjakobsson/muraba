@@ -3,5 +3,5 @@ title: Cintinar @ Cint, git is the game
 date: 25/03/2011
 
 Today was Cintinar at Cint. The purpose is to have different workshops every time about some topic chosen by someone. Today's topic was 
-**Git**. I have used it before but today we played around with forking some and I'm ashamed to say that I have only done that once before. 
+**Git**. I have used it before but today we played around with forking some and I'm ashamed to say that I have only done that once before.
 
