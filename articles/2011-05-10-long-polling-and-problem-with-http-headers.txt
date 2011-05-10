@@ -1,0 +1,63 @@
+--- 
+title: Long polling and problem with HTTP-headers
+date: 10/05/2011
+
+As mentioned in my previous post I needed som kind work-around for the long polling. So [Tobbe][tb]
+[tb]: https://twitter.com/#!/drunkcod 
+- one of the developers at **Cint** "hacked" together a fierce backend that pushes the data to us. 
+Enter moi. I then put up this javascript function in all its simplicity:
+
+    function fetchRespondentData() {
+	    $.ajax({
+	        url: "/LivePanelists/getLiveRespondents",
+	        type: 'GET',
+	        dataType: 'json',
+	        cache: true,
+	        ifModified: true,
+	        success: function (data, e, request) {
+	          setTimeout(function () { fetchRespondentData() }, 
+			  10000);
+	            if (request.status == 304) {
+	               var response = request.responseText
+				   .split("|");
+	               alert(response);
+	            }
+	            console.debug(data);
+
+	        },
+	        error: function (xhr, status, errorThrown) {
+	            $("#jsonError").html("<strong>I'm sorry 
+				but we couldnt find anyone.
+				\nPlease try again.\nStatus:</strong>" 
+				+ status)
+	            $("#ajax-message").remove();
+	        }
+
+	    });
+
+	 }    
+	
+I tried it first on a dummy **json** blob formated according to the real data. It worked dandy. Then I tried it against the **json** resultset
+we are getting from the database, all good. So then we started thinking that it would be a nice feature if we in the backend could check the http headers. 
+If the data we are fetching has not been modified since last fetch then we handle that. Then I spent some time for the first time in the backend doing some **C#**
+This is what I came up with:
+
+    public ActionResult Index()
+	   {
+	  	var ifModifiedSince = Request.Headers["If-Modified-Since"];
+	    if( !String.IsNullOrEmpty( ifModifiedSince ) )
+	        {
+	            Response.StatusCode = 304;
+	            Response.StatusDescription = "Not Modified";
+	            Response.End();
+   				return new EmptyResult();
+	         } 
+	           else 
+	         {
+	           return View("Index");
+
+	         }
+
+	 }
+Up until now I'm not sure this is accurate. Hopefully tomorrow I will have a breakthrough on the matter. 
+
