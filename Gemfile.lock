@@ -12,6 +12,7 @@ GEM
   specs:
     builder (3.0.0)
     coderay (0.9.8)
+    kgio (2.3.3)
     nokogiri (1.4.4)
     rack (1.2.2)
     rack-codehighlighter (0.4.7)
@@ -19,6 +20,9 @@ GEM
       rack (>= 1.0.0)
     rack-rewrite (1.0.2)
     rdiscount (1.6.8)
+    unicorn (3.5.0)
+      kgio (~> 2.3)
+      rack
 
 PLATFORMS
   ruby
@@ -30,3 +34,4 @@ DEPENDENCIES
   rack-rewrite
   rdiscount
   toto!
+  unicorn

@@ -1,0 +1,39 @@
+--- 
+title: NUnit testing with Cone
+date: 01/09/2011
+
+At Cint they are have come extremely far in terms of writing tests for there code. They test both backend and frontend. So when we started the new project there were demands on us to 
+unit test the backend and at least try and test the frontend with  [Jasmine][js].            
+[js]: http://pivotal.github.com/jasmine/  
+Usually for the .NET platform when writing unit tests you do this with NUnit. Here at Cint one of the developers have written kind of an extension to NUnit called  [Cone][co].
+[co]: https://github.com/drunkcod/Cone
+which utilizes NUnit but you write your tests with a sligthly different syntax. I wanted to test the login credentials for our membership provider. I ended up with a test looking like this:
+
+    [Describe(typeof(MyMembershipProvider))]
+	    public class MembershipProviderSpec
+	    {
+
+	      private MyMembershipProvider mymembershipProvider;
+
+	      [BeforeAll]
+	      public void construct_membershipProvider()
+	        {
+	            mymembershipProvider = new MyMembershipProvider();
+	        }
+
+
+	      public void correct_login_credentials()
+	       {
+	          string username = "someUsername";
+	          string password = "somePassword";
+
+	          MyMembershipProvider provider = new MyMembershipProvider();
+
+	          bool result = provider.ValidateUser(username, password);
+	          Verify.That(() => result == true);
+	       }
+	
+So was this basically do is creating a new instance of my membership provider, setting the login credentials hard coded for it, and with a boolean validating those.   
+This is a very simple test but for someone just starting I'm happy. Next post I will try and write something about Jasmine. Until then!
+	
+
